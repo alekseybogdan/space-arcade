@@ -210,7 +210,7 @@ MonoBehaviour:
   - {fileID: 5277642449818411327}
   - {fileID: 7028700370871655336}
   - {fileID: 1012700219117151305}
-  speed: 30
+  speed: 40
   explosionEffect: {fileID: 100010, guid: e0609132424a24844b1d53ad3d704fd9, type: 3}
 --- !u!1 &4621905198515711413
 GameObject:

@@ -8,6 +8,7 @@ public class Spawner : MonoBehaviour
     public GameObject explosiveAsteroid;
     public GameObject healthPickup;
     public GameObject weaponBoostPickup;
+    public GameObject firingRateBoostPickup;
     public GameObject missileShip;
 
     public float healthPickupSpawnDelay;
@@ -15,6 +16,9 @@ public class Spawner : MonoBehaviour
     
     public float weaponBoostPickupSpawnDelay;
     private float nextWeaponBoostPickupSpawnTime;
+    
+    public float firingRatePickupSpawnDelay;
+    private float nextFiringRatePickupSpawnTime;
     
     public float asteroidSpawnDelay;
     private float nextAsteroidSpawnTime;
@@ -51,6 +55,12 @@ public class Spawner : MonoBehaviour
         {
             SpawnObject(weaponBoostPickup);
             nextWeaponBoostPickupSpawnTime = Time.time + weaponBoostPickupSpawnDelay;
+        }
+        
+        if (Time.time > nextFiringRatePickupSpawnTime)
+        {
+            SpawnObject(firingRateBoostPickup);
+            nextFiringRatePickupSpawnTime = Time.time + firingRatePickupSpawnDelay;
         }
     }
 

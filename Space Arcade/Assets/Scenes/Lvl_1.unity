@@ -1942,13 +1942,15 @@ MonoBehaviour:
   asteroid: {fileID: 3494185014495777787, guid: 7add15139e8480a488e66ff48375d4ac, type: 3}
   explosiveAsteroid: {fileID: 3968969146338413762, guid: 923fdf7e694dada46adbafeb0e2b2656, type: 3}
   healthPickup: {fileID: 1332189037679501012, guid: b97d2a30858044b49890c2ba4a9729b2, type: 3}
-  weaponBoostPickup: {fileID: 4969121406704149648, guid: 37b3e2244b3370544a5d8422ac0e0f58, type: 3}
+  weaponBoostPickup: {fileID: 4609532844617618541, guid: 146808ed2a408ae4995cd6ff8006a889, type: 3}
+  firingRateBoostPickup: {fileID: 4969121406704149648, guid: 37b3e2244b3370544a5d8422ac0e0f58, type: 3}
   missileShip: {fileID: 3243765683732880534, guid: 538be7b0ab9ee0146b3b40138b9a91a2, type: 3}
   healthPickupSpawnDelay: 30
-  weaponBoostPickupSpawnDelay: 40
+  weaponBoostPickupSpawnDelay: 10
+  firingRatePickupSpawnDelay: 35
   asteroidSpawnDelay: 0.5
   explosiveAsteroidSpawnDelay: 3
-  missileShipSpawnDelay: 2
+  missileShipSpawnDelay: 1
   difficulty: 
 --- !u!23 &907987736
 MeshRenderer:
@@ -2429,7 +2431,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1445715572
 GameObject:
@@ -3170,7 +3172,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1935687394366504797, guid: c0c5221591a34af4f8731b6380ddc269, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1935687394366504797, guid: c0c5221591a34af4f8731b6380ddc269, type: 3}
       propertyPath: m_LocalPosition.x

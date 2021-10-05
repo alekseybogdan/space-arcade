@@ -8,8 +8,7 @@ public class PlayerGun : MonoBehaviour
     public Transform leftGun;
     public Transform rightGun;
 
-    bool isSecondaryWeaponActive = false;
-    float weaponBoostTimer;
+    private bool isSecondaryWeaponActive;
 
     public GameObject laser;
 
@@ -33,10 +32,8 @@ public class PlayerGun : MonoBehaviour
             {
                 Instantiate(laser, leftGun.position, leftGun.rotation);
                 Instantiate(laser, rightGun.position, rightGun.rotation);
-
-                weaponBoostTimer -= Time.deltaTime;
             }
-            
+
             nextShotTime = Time.time + shotDelay;
         }
     }
@@ -46,5 +43,12 @@ public class PlayerGun : MonoBehaviour
         isSecondaryWeaponActive = true;
         yield return new WaitForSeconds(duration);
         isSecondaryWeaponActive = false;
+    }
+    
+    public IEnumerator BoostFiringRate(float duration)
+    {
+        shotDelay = 0.1f;
+        yield return new WaitForSeconds(duration);
+        shotDelay = 0.25f;
     }
 }
