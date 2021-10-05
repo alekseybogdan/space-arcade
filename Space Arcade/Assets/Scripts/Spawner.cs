@@ -38,6 +38,7 @@ public class Spawner : MonoBehaviour
         rightSide = transform.localScale.x / 2;
         nextHealthPickupSpawnTime = healthPickupSpawnDelay;
         nextWeaponBoostPickupSpawnTime = weaponBoostPickupSpawnDelay;
+        nextFiringRatePickupSpawnTime = firingRatePickupSpawnDelay;
     }
 
     // Update is called once per frame

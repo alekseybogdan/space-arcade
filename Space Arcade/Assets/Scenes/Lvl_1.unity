@@ -1946,7 +1946,7 @@ MonoBehaviour:
   firingRateBoostPickup: {fileID: 4969121406704149648, guid: 37b3e2244b3370544a5d8422ac0e0f58, type: 3}
   missileShip: {fileID: 3243765683732880534, guid: 538be7b0ab9ee0146b3b40138b9a91a2, type: 3}
   healthPickupSpawnDelay: 30
-  weaponBoostPickupSpawnDelay: 10
+  weaponBoostPickupSpawnDelay: 35
   firingRatePickupSpawnDelay: 35
   asteroidSpawnDelay: 0.5
   explosiveAsteroidSpawnDelay: 3
